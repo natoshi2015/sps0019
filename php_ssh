@@ -1,3 +1,5 @@
+http://www.silverarm.com/code/setup-php-ssh2-connection-from-php-to-remote-box-on-pair-networks/
+
 if (ssh2_auth_pubkey_file($connection, 'username',
 
 'S:/sshphp/id_rsa.pub',
