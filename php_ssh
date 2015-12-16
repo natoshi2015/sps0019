@@ -1,0 +1,13 @@
+if (ssh2_auth_pubkey_file($connection, 'username',
+
+'S:/sshphp/id_rsa.pub',
+
+'S:/sshphp/id_rsa', '')) {
+
+echo "Public Key Authentication Successful\n";
+
+} else {
+
+die('Public Key Authentication Failed');
+
+}
