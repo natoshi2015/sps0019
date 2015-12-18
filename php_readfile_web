@@ -1,0 +1,21 @@
+My script working correctly on IE6 and Firefox 2 with any typ e of files (I hope :))
+
+function DownloadFile($file) { // $file = include path 
+        if(file_exists($file)) {
+            header('Content-Description: File Transfer');
+            header('Content-Type: application/octet-stream');
+            header('Content-Disposition: attachment; filename='.basename($file));
+            header('Content-Transfer-Encoding: binary');
+            header('Expires: 0');
+            header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+            header('Pragma: public');
+            header('Content-Length: ' . filesize($file));
+            ob_clean();
+            flush();
+            readfile($file);
+            exit;
+        }
+
+    }
+
+Run on Apache 2 (WIN32) PHP5
