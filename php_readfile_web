@@ -1,3 +1,5 @@
+http://php.net/manual/en/function.readfile.php
+
 My script working correctly on IE6 and Firefox 2 with any typ e of files (I hope :))
 
 function DownloadFile($file) { // $file = include path 
@@ -19,3 +21,5 @@ function DownloadFile($file) { // $file = include path
     }
 
 Run on Apache 2 (WIN32) PHP5
+
+
